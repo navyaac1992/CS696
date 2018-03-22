@@ -341,38 +341,5 @@ def get_protein_fasta(uniprot_id):
 
 
 
-if __name__ == '__main__':
-    s1 = "AABBCCDD"
-    s2 = "AAXXXCDD"
-    x = String_Aligner(s1, s2)
-    x.hamming_dist()
 
-    s11 = "AABBCCDD"
-    s22 = "XAABBCCDD"
-    y = String_Aligner(s11, s22)
-    y.hamming_dist()
 
-    s11 = "ABC"
-    s22 = "ABCD"
-    y = String_Aligner(s11, s22)
-    print(y.empty_matrix())
-
-    print(y.init_needleman_wunsch_matrix())
-
-    print(y.needleman_wunsch_fill())
-
-    print(y.smith_waterman_fill())
-
-    print(is_dna('CTAGAGAGAG'))
-
-    print(is_rna('CCCAAAUUUGGG'))
-
-    print(is_protein('ARQGHI'))
-
-    print(is_protein('XPLNNO'))
-
-    print(get_sra_xml('SRR3403834'))
-
-    print(get_filesize('SRR3403834'))
-
-    print(get_protein_fasta('P69892'))
